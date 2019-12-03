@@ -67,12 +67,12 @@ class Lab2 {
     System.out.println("  F1 finished with time: " + Logger.getTime(finish - start));
     
     delta = System.nanoTime();
-    MF = Matrix.multiplyOnValue(
-      Matrix.add(
-        Matrix.multiply(MA, ME),
-        MD
-      ),
-      Matrix.vectorDotProduct(A, Matrix.sort(C))
+    MF = Matrix.subtract(
+      Matrix.multiplyOnValue(MA, 6574),
+      Matrix.multiplyOnValue(
+        Matrix.multiply(MD, ME),
+        2342
+      )
     );
     finish = System.nanoTime();
     System.out.println("  F2 finished with time: " + Logger.getTime(finish - delta));

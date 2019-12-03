@@ -60,12 +60,12 @@ namespace Lab3App {
       Console.WriteLine("  F1 finished with time: " + Logger.getTime(finish - start));
       
       delta = Logger.nanoTime();
-      Matrix.multiplyOnValue(
-        Matrix.add(
-          Matrix.multiply(MA, ME),
-          MD
-        ),
-        Matrix.vectorDotProduct(A, Matrix.sort(C))
+      MF = Matrix.subtract(
+        Matrix.multiplyOnValue(MA, 6574),
+        Matrix.multiplyOnValue(
+          Matrix.multiply(MD, ME),
+          2342
+        )
       );
       finish = Logger.nanoTime();
       Console.WriteLine("  F2 finished with time: " + Logger.getTime(finish - delta));

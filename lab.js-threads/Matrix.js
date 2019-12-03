@@ -140,7 +140,6 @@ class Matrix {
 
   static multiplyOnValue(matrix, value) {
     const n = matrix.getVerticalLength();
-    console.log(matrix.mainMatrix);
     const m = matrix.getHorizontalLength();
     const tmpArr = [];
     for (let i = 0; i < n; i++) {
